@@ -43,9 +43,15 @@
     "@babel/core": "7.22.5",
     "@babel/eslint-parser": "7.22.5",
     "@babel/plugin-proposal-private-property-in-object": "7.21.11",
-    "@babel/preset-env": "7.22.5"
+    "@babel/preset-env": "7.22.5",
+    "gh-pages": "^6.1.1"
   },
   "plugins": [
-    ["@babel/plugin-proposal-private-property-in-object", { "loose": true }]
-]
+    [
+      "@babel/plugin-proposal-private-property-in-object",
+      {
+        "loose": true
+      }
+    ]
+  ]
 }
