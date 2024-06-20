@@ -5,16 +5,17 @@ import Offers from "../Components/Offers.jsx/Offers";
 import NewCollections from "../Components/NewCollections/NewCollections";
 import NewsLetter from "../Components/NewsLetter/NewsLetter";
 
-const Shop = () => {
-    return (
-        <div>
-           <Hero/>
-           <Popular/>
-           <Offers/>
-           <NewCollections/>
-           <NewsLetter/>
-        </div>
-    )
-}
 
-export default Shop
+const Shop = () => {
+  return (
+    <div>
+      <Hero />
+      <Popular />
+      <Offers />
+      <NewCollections />
+      <NewsLetter />
+    </div>
+  );
+};
+
+export default Shop;

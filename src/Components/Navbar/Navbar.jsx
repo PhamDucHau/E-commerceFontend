@@ -18,13 +18,13 @@ const Navbar = () => {
 
     return (
         <div className='navbar' >
-            <div className="nav-logo">
-                <img src={logo} alt="" />                
-                <p>SHOPPER</p>
+            <div className="nav-logo">                  
+                <Link style={{textDecoration: 'none',display: 'contents'}} to='/E-commerceFontend' ><img src={logo} alt="" /><p>SHOPPER</p></Link>             
+                
             </div>
             <img className='nav-dropdown' onClick={dropdown_toggle} src={nav_dropdown} alt="" />
             <ul ref={menuRef} className="nav-menu">
-                <li onClick={()=>{setMenu("shop")}}><Link style={{textDecoration: 'none'}} to='/' >Shop</Link>{menu==="shop"?<hr/> : <></>}</li>
+                <li onClick={()=>{setMenu("shop")}}><Link style={{textDecoration: 'none'}} to='/E-commerceFontend' >Shop</Link>{menu==="shop"?<hr/> : <></>}</li>
                 <li onClick={()=>{setMenu("mens")}}><Link style={{textDecoration: 'none'}} to='/mens' >Men</Link>{menu==="mens"?<hr/> : <></>}</li>
                 <li onClick={()=>{setMenu("womens")}}><Link style={{textDecoration: 'none'}} to='/womens' >Women</Link>{menu==="womens"?<hr/> : <></>}</li>
                 <li onClick={()=>{setMenu("kids")}}><Link style={{textDecoration: 'none'}} to='/kids' >Kids</Link>{menu==="kids"?<hr/> : <></>}</li>
